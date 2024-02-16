@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-image: url("../../assets/img/back10.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+figure {
+    margin: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+header#main-header nav#main-nav {
+    background-color: black;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header#main-header nav#main-nav > ul {
+    display: flex;
+}
+
+header#main-header nav#main-nav > ul > li {
+    flex: 1 1 0%;
+    padding: 30px 20px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+header#main-header nav#main-nav > ul li:hover {
+    background-color: white;
+}
+
+header#main-header nav#main-nav > ul > li:hover a {
+    color: black;
+}
+
+header#main-header div#logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 130px 0 50px 0;
+}
+
+header#main-header div#logo h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+header#main-header nav#main-nav > ul li > ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+header#main-header nav#main-nav > ul li:hover > ul {
+    max-height: 1000px;
+}
+
+header#main-header nav#main-nav > ul li > ul > li {
+    padding: 30px 20px;
+    text-align: center;
+    cursor: pointer;
+    background-color: black;
+    border: 1px solid white;
+    border-top: none;
+    transition: 0.5s;
+}
+
+header#main-header nav#main-nav > ul li > ul > li:first-of-type {
+    border-top: 1px solid white;
+}
+
+header#main-header nav#main-nav > ul li:hover > ul > li a {
+    color: white;
+}
+
+header#main-header nav#main-nav > ul > li > ul > li:hover a {
+    color: black;
+}
+
+main section.content {
+    padding: 0 20px;
+    background-color: #f8f9fa;
+    border: 2px solid black;
+    margin-bottom: 50px;
+}
+
+main section.content h2 {
+    text-transform: uppercase;
+}
+
+main section.content div.text-content {
+    display: flex;
+}
+
+main section.content:first-of-type div.text-content figure {
+    margin-right: 20px;
+}
+
+main section.content:last-of-type div.text-content figure {
+    order: 1;
+    margin-left: 20px;
+}
+
+main section.content div.text-content div.text p {
+    font-size: 1.3rem;
+}
+
+main aside.news {
+    text-align: center;
+}
+
+main aside.news h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+main aside.news div.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main aside.news div.cards-container div.card {
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    position: relative;
+}
+
+main aside.news div.cards-container div.card figure {
+    width: 100%;
+    height: 220px;
+    background-color: #ffd60a;
+}
+
+main aside.news div.cards-container div.card div.description {
+    width: 100%;
+    height: 80px;
+    color: white;
+    background-color: black;
+    padding: 0 5px;
+    padding-top: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+main aside.news div.cards-container div.card div.description:hover {
+    height: 300px;
+}
+
+main aside.sponsor {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+main aside.sponsor h2 {
+    font-size: 2rem;
+}
+
+footer#main-footer {
+    background-image: url("../../assets/img/back7.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px;
+    position: relative;
+}
+
+footer#main-footer div.footer-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer#main-footer div.footer-text span {
+    font-size: 2rem;
+}
+
+footer#main-footer div.footer-text span:first-of-type {
+    color: white;
+}
+
+footer#main-footer div.footer-text span:last-of-type {
+    color: red;
+}
+
+main aside.sponsor div.images-container {
+    display: flex;
+    justify-content: space-between;
+}
+
